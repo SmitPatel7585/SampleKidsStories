@@ -1,24 +1,516 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ezd-Ug-SpQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sample Kids Stories-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleKidsStories" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background6" translatesAutoresizingMaskIntoConstraints="NO" id="YDf-is-gea">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="I5x-Io-8vC">
+                                <rect key="frame" x="136.66666666666666" y="366" width="119.99999999999997" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc0-LG-8do">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.31764705879999999" green="0.2274509804" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="D1Z-fd-213"/>
+                                            <constraint firstAttribute="height" constant="40" id="nRE-vC-6Wc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Level 1"/>
+                                        <connections>
+                                            <segue destination="b2C-Ag-Hch" kind="show" id="OwS-Qd-CDJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxg-FL-9dr">
+                                        <rect key="frame" x="0.0" y="80" width="120" height="40"/>
+                                        <color key="backgroundColor" red="0.31764705879999999" green="0.2274509804" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MoB-Ft-CNP"/>
+                                            <constraint firstAttribute="width" constant="120" id="d5g-iE-xoP"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Level 2"/>
+                                        <connections>
+                                            <segue destination="KfC-SM-Lsv" kind="show" id="5DQ-LF-imo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Fzf-WO-ZJz"/>
+                                    <constraint firstAttribute="height" constant="120" id="X3t-y2-gtQ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-Mg-afb">
+                                <rect key="frame" x="329" y="770" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BG9-zX-MOQ"/>
+                                    <constraint firstAttribute="width" constant="48" id="Ryh-Ng-0mK"/>
+                                </constraints>
+                                <color key="tintColor" red="0.31764705879999999" green="0.2274509804" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="i" cornerStyle="capsule"/>
+                                <connections>
+                                    <segue destination="EdO-YD-wuG" kind="show" id="xoe-Db-cqC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I5x-Io-8vC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CD4-UL-lHU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hd5-Mg-afb" secondAttribute="trailing" constant="16" id="V3n-7i-3K1"/>
+                            <constraint firstItem="hd5-Mg-afb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jnC-oF-ct8"/>
+                            <constraint firstItem="I5x-Io-8vC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lgj-Ia-jBh"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Sample Kids Stories" id="pxS-uP-oGC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="349" y="27"/>
+        </scene>
+        <!--Level 1-->
+        <scene sceneID="u70-Fu-3z7">
+            <objects>
+                <viewController id="b2C-Ag-Hch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AgE-dr-0ok">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background8" translatesAutoresizingMaskIntoConstraints="NO" id="nEG-qe-6rs">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-Wj-ZZO">
+                                <rect key="frame" x="84.666666666666686" y="371.66666666666669" width="224" height="108.66666666666669"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k5-gU-KW0">
+                                        <rect key="frame" x="0.0" y="0.0" width="224" height="34.333333333333336"/>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1960784314" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="224" id="7tA-W4-ivC"/>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="wuB-7k-hQ0"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Birbal and the Mango Tree"/>
+                                        <connections>
+                                            <segue destination="yci-as-PdF" kind="show" id="xgV-t7-y7Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yl-yQ-t5q">
+                                        <rect key="frame" x="0.0" y="74.333333333333314" width="224" height="34.333333333333343"/>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1960784314" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="eQP-S6-s8R"/>
+                                            <constraint firstAttribute="width" constant="224" id="eau-X9-C8Z"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="The Boy And The Filberts"/>
+                                        <connections>
+                                            <segue destination="KOy-JG-NPC" kind="show" id="zlc-fX-9ec"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0QL-iF-U61"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r1x-Wj-ZZO" firstAttribute="centerX" secondItem="AgE-dr-0ok" secondAttribute="centerX" id="GgH-no-Cwh"/>
+                            <constraint firstItem="r1x-Wj-ZZO" firstAttribute="centerX" secondItem="AgE-dr-0ok" secondAttribute="centerX" id="kVB-tZ-jaD"/>
+                            <constraint firstItem="r1x-Wj-ZZO" firstAttribute="centerY" secondItem="AgE-dr-0ok" secondAttribute="centerY" id="rsk-nj-4Ka"/>
+                            <constraint firstItem="r1x-Wj-ZZO" firstAttribute="centerY" secondItem="AgE-dr-0ok" secondAttribute="centerY" id="ue0-Xu-3e0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Level 1" id="4k7-jy-cfP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAQ-uQ-lFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-756"/>
+        </scene>
+        <!--Birbal and the Mango Tree-->
+        <scene sceneID="caN-XY-Iav">
+            <objects>
+                <viewController id="yci-as-PdF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i5I-lq-JWV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="NdL-vG-BYf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz2-ef-PIC">
+                                <rect key="frame" x="37" y="191" width="319" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="RFe-ix-i7W"/>
+                                    <constraint firstAttribute="height" constant="471" id="cDn-S9-cTG"/>
+                                </constraints>
+                                <mutableString key="text">Ram and Sham were in a fight.  Both of them said they owned the same mango tree. They went up to Birbal and asked him to decide the matter, once and for all.  Who was the true owner of the mango tree? Birbal said, "There is only one way to settle the matter. First, you must take all of the fruit off the tree.  Each of you should take half the mangos.  Then you must cut down the tree and divide the trunk in half.  Each of you should take half the wood, too.  Then everything will be fair.  That is what I say.”</mutableString>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bPr-3V-aWk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bPr-3V-aWk" firstAttribute="trailing" secondItem="Qz2-ef-PIC" secondAttribute="trailing" constant="37" id="PaX-b7-ehF"/>
+                            <constraint firstItem="bPr-3V-aWk" firstAttribute="bottom" secondItem="Qz2-ef-PIC" secondAttribute="bottom" constant="156" id="aRI-xK-7xG"/>
+                            <constraint firstItem="Qz2-ef-PIC" firstAttribute="leading" secondItem="bPr-3V-aWk" secondAttribute="leading" constant="37" id="aTt-eS-YDM"/>
+                            <constraint firstItem="Qz2-ef-PIC" firstAttribute="centerX" secondItem="i5I-lq-JWV" secondAttribute="centerX" id="hod-0m-n7U"/>
+                            <constraint firstItem="Qz2-ef-PIC" firstAttribute="top" secondItem="bPr-3V-aWk" secondAttribute="top" constant="88" id="sUV-vU-sZb"/>
+                            <constraint firstItem="Qz2-ef-PIC" firstAttribute="centerY" secondItem="i5I-lq-JWV" secondAttribute="centerY" id="xJL-hj-ATA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Birbal and the Mango Tree" id="rkb-yX-thx">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="ch0-LW-pxY">
+                            <connections>
+                                <segue destination="TLO-43-dAj" kind="show" id="qEN-R4-QC2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnb-Ho-HfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2197.709923664122" y="-1437.323943661972"/>
+        </scene>
+        <!--Birbal and the Mango Tree-->
+        <scene sceneID="7nJ-a8-Z5A">
+            <objects>
+                <viewController id="TLO-43-dAj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Krf-V2-SNp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="hUK-Fn-DXe">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-de-Kks">
+                                <rect key="frame" x="37" y="190.66666666666663" width="319" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="6LY-eb-PYi"/>
+                                    <constraint firstAttribute="height" constant="471" id="grR-wF-l40"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="471" id="jtY-lR-3AJ"/>
+                                    <constraint firstAttribute="width" constant="319" id="qh6-lv-uwp"/>
+                                </constraints>
+                                <string key="text">Who really owned the mango tree? Ram thought it was all a good idea, and he said so. But Sham said, “Your Honor! I have tended that tree for seven years. If you must, give the mango tree to Ram.  But do not make us cut it down!”. "What you have said told me all I need to know," said Birbal.  Then he said that Sham was the true owner of the mango tree.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O09-aq-a4c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hUK-Fn-DXe" firstAttribute="top" secondItem="Krf-V2-SNp" secondAttribute="top" id="7Ev-7b-bbC"/>
+                            <constraint firstItem="qaq-de-Kks" firstAttribute="centerX" secondItem="Krf-V2-SNp" secondAttribute="centerX" id="Ttv-TJ-Q9r"/>
+                            <constraint firstItem="qaq-de-Kks" firstAttribute="centerY" secondItem="Krf-V2-SNp" secondAttribute="centerY" id="X21-7H-fg8"/>
+                            <constraint firstItem="hUK-Fn-DXe" firstAttribute="trailing" secondItem="O09-aq-a4c" secondAttribute="trailing" id="XyL-zd-kVH"/>
+                            <constraint firstItem="hUK-Fn-DXe" firstAttribute="leading" secondItem="O09-aq-a4c" secondAttribute="leading" id="ckr-OW-hZE"/>
+                            <constraint firstAttribute="bottom" secondItem="hUK-Fn-DXe" secondAttribute="bottom" id="uPi-lh-1ZH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Birbal and the Mango Tree" id="41b-mU-itx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7N4-wj-6K9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2963" y="-1437"/>
+        </scene>
+        <!--The Boy And The Filberts-->
+        <scene sceneID="zgs-ty-tQw">
+            <objects>
+                <viewController id="KOy-JG-NPC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U78-dZ-1SW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="9DF-ro-IhG">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQk-Mb-lF5">
+                                <rect key="frame" x="37" y="190.66666666666663" width="319" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="471" id="7GX-oR-2Ch"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="FEG-Mx-3Me"/>
+                                    <constraint firstAttribute="width" constant="319" id="NZb-vY-FaF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="471" id="qR2-CD-nxK"/>
+                                </constraints>
+                                <string key="text">A Boy was given permission to put his hand into a pitcher to get some filberts. But he took such a great fistful that he could not draw his hand out again. There he stood, unwilling to give up a single filbert and yet unable to get them all out at once. Vexed and disappointed he began to cry."My boy," said his mother, "be satisfied with half the nuts you have taken and you will easily get your hand out. Then perhaps you may have some more filberts some other time."Do not attempt too much at once.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6bI-JH-1Kd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9DF-ro-IhG" firstAttribute="top" secondItem="U78-dZ-1SW" secondAttribute="top" id="6HS-OD-UAr"/>
+                            <constraint firstItem="9DF-ro-IhG" firstAttribute="leading" secondItem="6bI-JH-1Kd" secondAttribute="leading" id="83L-Zq-obY"/>
+                            <constraint firstItem="MQk-Mb-lF5" firstAttribute="centerY" secondItem="U78-dZ-1SW" secondAttribute="centerY" id="DQc-6c-dmL"/>
+                            <constraint firstItem="9DF-ro-IhG" firstAttribute="trailing" secondItem="6bI-JH-1Kd" secondAttribute="trailing" id="QJU-Kx-N0T"/>
+                            <constraint firstAttribute="bottom" secondItem="9DF-ro-IhG" secondAttribute="bottom" id="Uj6-V4-zp9"/>
+                            <constraint firstItem="MQk-Mb-lF5" firstAttribute="centerX" secondItem="U78-dZ-1SW" secondAttribute="centerX" id="dkb-Ek-LbC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Boy And The Filberts" id="I2Z-qF-x49"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HnM-89-Ibb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2197.709923664122" y="-756.33802816901414"/>
+        </scene>
+        <!--Level 2-->
+        <scene sceneID="b5k-76-zC0">
+            <objects>
+                <viewController id="KfC-SM-Lsv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRa-SK-ohU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background7" translatesAutoresizingMaskIntoConstraints="NO" id="gTr-sK-QiN">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wac-jt-sfo">
+                                <rect key="frame" x="112.00000000000001" y="409" width="169.33333333333337" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTi-BC-qwf">
+                                        <rect key="frame" x="0.0" y="0.0" width="169.33333333333334" height="34.333333333333336"/>
+                                        <color key="backgroundColor" red="0.1529411765" green="0.1960784314" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="Zj5-OA-EhS"/>
+                                            <constraint firstAttribute="width" constant="169.33000000000001" id="bj4-AX-abj"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Birbal Finds a Thief"/>
+                                        <connections>
+                                            <segue destination="TbM-wM-Csw" kind="show" id="bdX-Ss-lua"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.329999999999998" id="BpV-nP-RKs"/>
+                                    <constraint firstAttribute="width" constant="169.33000000000001" id="dwB-a0-Bw5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F3P-bM-Zrw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gTr-sK-QiN" firstAttribute="top" secondItem="xRa-SK-ohU" secondAttribute="top" id="FtH-VO-g8I"/>
+                            <constraint firstItem="wac-jt-sfo" firstAttribute="centerX" secondItem="xRa-SK-ohU" secondAttribute="centerX" id="TP9-9V-m48"/>
+                            <constraint firstItem="gTr-sK-QiN" firstAttribute="trailing" secondItem="F3P-bM-Zrw" secondAttribute="trailing" id="ZZu-Np-Sf1"/>
+                            <constraint firstAttribute="bottom" secondItem="gTr-sK-QiN" secondAttribute="bottom" id="cSA-Fh-wyd"/>
+                            <constraint firstItem="wac-jt-sfo" firstAttribute="centerX" secondItem="xRa-SK-ohU" secondAttribute="centerX" id="dd4-vx-oFV"/>
+                            <constraint firstItem="gTr-sK-QiN" firstAttribute="leading" secondItem="F3P-bM-Zrw" secondAttribute="leading" id="lMk-5D-6Zl"/>
+                            <constraint firstItem="wac-jt-sfo" firstAttribute="centerY" secondItem="xRa-SK-ohU" secondAttribute="centerY" id="yL7-H4-MXm"/>
+                            <constraint firstItem="wac-jt-sfo" firstAttribute="centerY" secondItem="xRa-SK-ohU" secondAttribute="centerY" id="yU8-Yg-gzw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Level 2" id="eaa-dy-cix"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6c-aw-dn2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="27"/>
+        </scene>
+        <!--Birbal Finds a Thief-->
+        <scene sceneID="u0M-q5-iZJ">
+            <objects>
+                <viewController id="TbM-wM-Csw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8G-eU-4h6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="s9e-k9-cDy">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boY-VX-eq7">
+                                <rect key="frame" x="37" y="190.66666666666663" width="319" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="52F-t3-Pkt"/>
+                                    <constraint firstAttribute="height" constant="471" id="Bhi-kK-W5C"/>
+                                    <constraint firstAttribute="width" constant="319" id="RAi-fB-vrS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="471" id="wUr-zC-oBU"/>
+                                </constraints>
+                                <string key="text">One fine morning, a minister went to Emperor Akbar's court to tell the Emperor some bad news.
+His gold coins were all gone! They must have been stolen the night before!Emperor Akbar was shocked to hear this. The place where the minister lived was the safest in the kingdom. Surely no one could have broken into the house to steal the coins! It must have been one of the other ministers who lived there, too, who took the coins. But who? The Emperor asked Birbal how to solve the case. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Ii-jb-IAx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s9e-k9-cDy" secondAttribute="bottom" constant="-1" id="5rs-9G-yUn"/>
+                            <constraint firstItem="s9e-k9-cDy" firstAttribute="top" secondItem="G8G-eU-4h6" secondAttribute="top" id="9ux-re-w8d"/>
+                            <constraint firstItem="s9e-k9-cDy" firstAttribute="top" secondItem="G8G-eU-4h6" secondAttribute="top" id="BbT-4q-0Fl"/>
+                            <constraint firstItem="boY-VX-eq7" firstAttribute="centerX" secondItem="G8G-eU-4h6" secondAttribute="centerX" id="HvT-8k-rHc"/>
+                            <constraint firstItem="s9e-k9-cDy" firstAttribute="trailing" secondItem="0Ii-jb-IAx" secondAttribute="trailing" id="I5V-Ob-q0t"/>
+                            <constraint firstItem="boY-VX-eq7" firstAttribute="centerY" secondItem="G8G-eU-4h6" secondAttribute="centerY" id="Lru-5Y-4GU"/>
+                            <constraint firstItem="s9e-k9-cDy" firstAttribute="trailing" secondItem="0Ii-jb-IAx" secondAttribute="trailing" id="To0-Vo-PbQ"/>
+                            <constraint firstItem="s9e-k9-cDy" firstAttribute="leading" secondItem="0Ii-jb-IAx" secondAttribute="leading" id="WGM-5G-Wil"/>
+                            <constraint firstAttribute="bottom" secondItem="s9e-k9-cDy" secondAttribute="bottom" id="hzn-KO-Hgb"/>
+                            <constraint firstItem="s9e-k9-cDy" firstAttribute="leading" secondItem="0Ii-jb-IAx" secondAttribute="leading" id="iLk-Qc-kE7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Birbal Finds a Thief" id="1RX-3k-NlG">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="5jS-Ho-nrK">
+                            <connections>
+                                <segue destination="JCh-DQ-veW" kind="show" id="EAW-jC-Y4a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKQ-xd-rlw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.2748091603053" y="26.760563380281692"/>
+        </scene>
+        <!--Birbal Finds a Thief-->
+        <scene sceneID="H83-4r-IfO">
+            <objects>
+                <viewController id="JCh-DQ-veW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Og2-q1-pnM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="z7J-VH-KlB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGw-f0-bcH">
+                                <rect key="frame" x="37" y="190.66666666666663" width="319" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="319" id="181-AW-Ihr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="471" id="LUf-cr-a3G"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="471" id="Qye-eo-iZt"/>
+                                    <constraint firstAttribute="height" constant="471" id="ffX-Ha-OSv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="gXd-pP-469"/>
+                                    <constraint firstAttribute="width" constant="319" id="wfC-hY-syX"/>
+                                </constraints>
+                                <string key="text">Birbal called for a donkey to be tied to a pole at the place where the minister lived. He ordered all the ministers to lift the donkey's tail and say, "I did not steal the coins." Then each of them must come to the palace later that day.When each of the ministers were at the palace, Birbal said, “Now each of you must turn your hand up, so I can see the palm of your hand.”  This was odd and the ministers did not know what to think of it.  But they did as they were bid. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ewt-dI-FDQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z7J-VH-KlB" firstAttribute="leading" secondItem="ewt-dI-FDQ" secondAttribute="leading" id="5Ub-NF-uTg"/>
+                            <constraint firstAttribute="bottom" secondItem="z7J-VH-KlB" secondAttribute="bottom" id="6ii-tA-tUK"/>
+                            <constraint firstItem="VGw-f0-bcH" firstAttribute="centerY" secondItem="Og2-q1-pnM" secondAttribute="centerY" id="923-0m-zqx"/>
+                            <constraint firstItem="VGw-f0-bcH" firstAttribute="centerX" secondItem="Og2-q1-pnM" secondAttribute="centerX" id="HBI-4B-3u6"/>
+                            <constraint firstItem="z7J-VH-KlB" firstAttribute="trailing" secondItem="ewt-dI-FDQ" secondAttribute="trailing" id="YOD-qg-xPA"/>
+                            <constraint firstItem="z7J-VH-KlB" firstAttribute="top" secondItem="Og2-q1-pnM" secondAttribute="top" id="lzo-yg-5Ko"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Birbal Finds a Thief" id="Ulq-Yx-O5e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="of2-8j-cHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="27"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="igh-AJ-cyD">
+            <objects>
+                <viewController id="EdO-YD-wuG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="297-sE-bYt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background5" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-BI-v3S">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7j-0l-GZ1">
+                                <rect key="frame" x="37" y="190.66666666666663" width="319" height="471"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="03N-VH-PV2"/>
+                                    <constraint firstAttribute="width" constant="319" id="3zL-Ul-BTl"/>
+                                    <constraint firstAttribute="height" constant="471" id="Q6J-dl-IbF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="471" id="con-0L-qVT"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="471" id="ld6-kC-gcj"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="319" id="wik-pX-FoI"/>
+                                </constraints>
+                                <string key="text">Designed for the enjoyment of young children, Kid Stories is an appealing application featuring delightful stories tailored for toddlers, preschoolers, and early elementary school children. The app includes interactive buttons, a lively user interface, and valuable life lessons, organizing content by age.
+
+Level 1 : age 6 - 10
+Level 2 : age 11 - 15
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yat-dr-vbt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CDD-BI-v3S" firstAttribute="trailing" secondItem="yat-dr-vbt" secondAttribute="trailing" id="Ken-XW-6Zd"/>
+                            <constraint firstItem="Z7j-0l-GZ1" firstAttribute="centerX" secondItem="297-sE-bYt" secondAttribute="centerX" id="LM6-g2-iIV"/>
+                            <constraint firstItem="CDD-BI-v3S" firstAttribute="top" secondItem="297-sE-bYt" secondAttribute="top" id="RwW-fA-YU1"/>
+                            <constraint firstAttribute="bottom" secondItem="CDD-BI-v3S" secondAttribute="bottom" id="Sy5-vc-hx2"/>
+                            <constraint firstItem="Z7j-0l-GZ1" firstAttribute="centerY" secondItem="297-sE-bYt" secondAttribute="centerY" id="WYA-mL-ubC"/>
+                            <constraint firstItem="CDD-BI-v3S" firstAttribute="leading" secondItem="yat-dr-vbt" secondAttribute="leading" id="Xit-gb-BzV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="C4y-68-jlt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZO-5v-oO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="763"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GJI-tz-8wu">
+            <objects>
+                <navigationController id="Ezd-Ug-SpQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mhy-gZ-vHQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6yg-Uh-qVs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0h-fZ-6ZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-535" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background1" width="1200" height="1604"/>
+        <image name="background2" width="1200" height="1604"/>
+        <image name="background3" width="1200" height="1680"/>
+        <image name="background5" width="1200" height="1703"/>
+        <image name="background6" width="1300" height="1317"/>
+        <image name="background7" width="1300" height="1317"/>
+        <image name="background8" width="1300" height="1317"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
